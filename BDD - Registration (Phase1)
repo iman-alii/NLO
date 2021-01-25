@@ -1,0 +1,19 @@
+Feature: Register a new account 
+Description: NLO user will be able to successfully create a new account so that he can login to NLO website 
+
+Scenario: Register new NLO account 
+Given I'm on the NLO website 
+And I navigated to the registration page  
+And email is <email> 
+And Password is <Password>  
+And Name is <Name>  
+And date of birth is <date of birth>  
+And BSN is <BSN>  
+And IBAN is <IBAN> 
+And privacy statement is <True> 
+When I click on submit button 
+Then I will be navigated to my personal bank account application in order to login there and proceed with the NLO registration process 
+Examples:          	       
+
+		| E-mail                 | Password     | Name        | Date of Birth    | BSN           | IBAN                             | Privacy| 
+		| Iman.ali@gmail.com     | ---111Nlo    | Iman Ali    | 10-08-1951       | 5787.31.150   | NL91 ABNA 0417 1643 00           |True    |
